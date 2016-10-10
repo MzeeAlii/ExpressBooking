@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="creationsofali.expressbooking.PayUpActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_mobile_payment_alt" />
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar_transparent" />
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/malibuAlpha"
+            android:padding="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/app_bar"
+            android:text="Please choose a payment method and complete your booking after receiving the token number."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@id/message"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/a700Alpha"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:minWidth="140dp"
+            android:text="Company Name"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/amountToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/message"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/a700Alpha"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:minWidth="120dp"
+            android:text="35,000/="
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/logoContainer"
+            android:layout_width="84dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logoAirtel"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/message"
+                android:layout_margin="12dp"
+                android:src="@drawable/logo_airtel_money" />
+
+            <ImageView
+                android:id="@+id/logoTigo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/message"
+                android:layout_margin="12dp"
+                android:src="@drawable/logo_tigo_pesa_alt" />
+
+            <ImageView
+                android:id="@+id/logoVoda"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/message"
+                android:layout_margin="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_vodafone_mpesa" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/numberContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/image"
+            android:layout_toRightOf="@+id/logoContainer">
+
+            <TextView
+                android:id="@+id/airtelNo"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_margin="14dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0688 001 001"
+                android:textColor="#666"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/line1"
+                android:layout_width="300dp"
+                android:layout_height="0.2dp"
+                android:layout_below="@id/airtelNo"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="#777"
+                android:tint="@color/colorTartOrange" />
+
+            <TextView
+                android:id="@+id/tigoNo"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@+id/airtelNo"
+                android:layout_margin="14dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0688 001 001"
+                android:textColor="#666"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="300dp"
+                android:layout_height="0.3dp"
+                android:layout_below="@id/tigoNo"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="#777" />
+
+            <TextView
+                android:id="@+id/vodaNo"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_below="@+id/tigoNo"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0688 001 001"
+                android:textColor="#666"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/line3"
+                android:layout_width="300dp"
+                android:layout_height="0.4dp"
+                android:layout_below="@id/vodaNo"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="#777" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/completeButton"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/a700"
+            android:elevation="6dp"
+            android:text="Complete Booking"
+            android:textSize="14dp"
+            android:translationZ="12dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

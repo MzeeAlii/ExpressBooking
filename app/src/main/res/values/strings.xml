@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Express Booking</string>
+    <string name="welcomeNote">Welcome to Express Booking, your smart travel agent. Bus ticket in your hand, anytime, any place!</string>
+    <string name="welcomeNoteMini">Easy. Fast. Secured.</string>
+</resources>

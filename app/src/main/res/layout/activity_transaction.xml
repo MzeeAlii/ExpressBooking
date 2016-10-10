@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="creationsofali.expressbooking.TransactionActivity">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/rLayoutPayUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/malibu">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please enter confirmation code below"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/colorAccentWithAlpha"
+            android:padding="16dp"
+            android:textSize="16dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/text"/>
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="240dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:elevation="2dp"
+            android:hint="Transaction ID"
+            android:imeOptions="actionDone"
+            android:inputType="text|textCapCharacters"
+            android:textColorHint="#bfff" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/submitButton"
+            android:layout_below="@+id/id"
+            android:src="@drawable/ic_check"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

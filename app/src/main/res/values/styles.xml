@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@color/pacificBlue</item>
+        <item name="colorAccent">@color/orangePeel</item>
+        <item name="android:textColorPrimary">@color/aliceBlue</item>
+
+
+        <!-- For spinner -->
+        <item name="android:spinnerItemStyle">
+            @style/spinnerItemStyle
+        </item>
+    </style>
+
+    <style name="spinnerItemStyle">
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@color/malibulight</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">#fff</item>
+
+    </style>
+
+    <!-- Toolbar theme -->
+    <style name="MyAppBarTheme" parent="ThemeOverlay.AppCompat.Dark">
+    </style>
+
+    <style name="MyAppBarThemeTr" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorSecondary">#888</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+</resources>

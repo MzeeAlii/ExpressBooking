@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="creationsofali.expressbooking.HelpActivity">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_half_right"
+                android:backgroundTint="@color/malibulight"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:text="Help: Payment method explanation about steps and all that"
+                android:textColor="#efff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tokenNo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="100dp"
+                android:background="@color/malibulight"
+                android:padding="10dp"
+                android:text="MP160919.0253.B65010"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/help"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@id/text1"
+                android:scaleType="fitStart"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="creationsofali.expressbooking.Booking">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="@color/summerSky">
+
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"
+            android:elevation="4dp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:layout_margin="16dp"
+            android:background="@color/malibu"
+            android:elevation="1dp"
+            android:padding="16dp"
+            android:text="Let us help you to get the best service, while considering your time and your budget."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/labelFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/spinnerFrom"
+            android:text="From: "
+            android:layout_below="@+id/text"
+            android:textColor="@color/aliceBlue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerFrom"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/spinnerFrom"
+            android:text="To: "
+            android:textColor="@color/aliceBlue"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerFrom"
+            android:layout_width="260dp"
+            android:layout_height="64dp"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="@color/malibu"
+            android:elevation="1dp"
+            android:minHeight="48dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/spinnerTo"
+            android:layout_width="260dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/spinnerFrom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:backgroundTint="@color/malibu"
+            android:elevation="1dp"
+            android:spinnerMode="dropdown" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="344dp"
+        android:elevation="6dp"
+        android:src="@drawable/ic_search_service"
+        android:translationZ="12dp" />
+
+
+</FrameLayout>

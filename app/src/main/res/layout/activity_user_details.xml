@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="creationsofali.expressbooking.TransactionActivity">
+
+
+    <ImageView
+        android:id="@+id/imageMobilePayment"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:scaleType="centerCrop"
+        android:elevation="2dp"
+        android:src="@drawable/cell" />
+
+    <include layout="@layout/app_bar_transparent"
+        android:id="@+id/app_bar"/>
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/colorAccentWithAlpha"
+        android:gravity="center_horizontal"
+        android:minWidth="140dp"
+        android:padding="10dp"
+        android:elevation="2.4dp"
+        android:text="Company Name"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/busType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/companyName"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/malibuAlpha"
+        android:gravity="center_horizontal"
+        android:minWidth="100dp"
+        android:elevation="2.4dp"
+        android:padding="8dp"
+        android:text="Bus Model"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageMobilePayment">
+
+        <RelativeLayout
+            android:id="@+id/rLayoutPayUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/firstNameText"
+                android:layout_width="2600dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:elevation="2dp"
+                android:hint="First name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="#666"
+                android:textColorHint="#b999" />
+
+            <EditText
+                android:id="@+id/lastNameText"
+                android:layout_width="260dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/firstNameText"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="4dp"
+                android:elevation="2dp"
+                android:hint="Last name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="#666"
+                android:textColorHint="#b999" />
+
+
+            <EditText
+                android:id="@+id/phoneNoText"
+                android:layout_width="260dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/lastNameText"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="4dp"
+                android:elevation="2dp"
+                android:hint="Phone number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textColor="#666"
+                android:textColorHint="#b999" />
+
+
+            <TextView
+                android:id="@+id/ic_from"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/phoneNoText"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/circle_half_left"
+                android:gravity="center"
+                android:text="From:"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/origin"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_below="@+id/phoneNoText"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/ic_from"
+                android:background="@drawable/circle_half_right"
+                android:backgroundTint="@color/malibulight"
+                android:gravity="center_horizontal"
+                android:minWidth="80dp"
+                android:text="Origin"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="48dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/phoneNoText"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/destination"
+                android:background="@drawable/circle_half_left"
+                android:gravity="center"
+                android:text="To:"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/phoneNoText"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/circle_half_right"
+                android:gravity="center_horizontal"
+                android:minWidth="80dp"
+                android:text="Destination"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/dateText"
+                android:layout_width="260dp"
+                android:layout_height="56dp"
+                android:layout_below="@+id/ic_from"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="8dp"
+                android:elevation="2dp"
+                android:hint="Date"
+                android:imeOptions="actionDone"
+                android:inputType="date"
+                android:textColor="#666"
+                android:textColorHint="#b999" />
+
+            <Spinner
+                android:id="@+id/seatNoDropDown"
+                android:layout_width="260dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/dateText"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="4dp"
+                android:elevation="1dp"
+                android:spinnerMode="dropdown"
+                android:textAlignment="viewStart"
+                android:backgroundTint="@color/summerSky"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_person_add" />
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/phoneNoText"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_bus" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/submitButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/seatNoDropDown"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/button_shape"
+                android:elevation="4dp"
+                android:translationZ="12dp"
+                android:src="@drawable/ic_check" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_margin="1dp"
+                android:layout_below="@+id/submitButton"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

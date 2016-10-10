@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/summerSky"
+    tools:context="creationsofali.expressbooking.MainActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin" />
+
+    <LinearLayout
+        android:id="@+id/welcomeNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@color/malibu"
+        android:elevation="1.6dp"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:text="@string/welcomeNote"
+            android:textColor="@color/aliceBlue"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/welcomeTextMini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_bar"
+            android:layout_marginTop="20dp"
+            android:fontFamily="cursive"
+            android:gravity="center_horizontal"
+            android:text="@string/welcomeNoteMini"
+            android:textColor="#fff"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bookNowBtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeNote"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_shape"
+        android:text="Book Now"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:typeface="serif" />
+
+
+</RelativeLayout>

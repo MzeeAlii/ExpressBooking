@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@android:color/transparent</color>
+    <color name="colorAccent">#FE9C00</color>
+    <color name="colorAccentWithAlpha">#77FE9C00</color>
+    <color name="colorDivider">#fff6e0</color>
+    <color name="aliceBlue">#FCFDFE</color>
+    <color name="pacificBlue">#0098CC</color>
+    <color name="malibu">#4FC6EE</color>
+    <color name="bobo">#1b4f72</color>
+    <color name="malibu2">#76c0d9</color>
+    <color name="malibuAlpha">#664FC6EE</color>
+    <color name="malibulight">#58cff8</color>
+    <color name="summerSky">#2FBBEB</color>
+    <color name="a700">#E53935</color>
+    <color name="a700Alpha">#88E53935</color>
+    <color name="a700Dark">#B71C1C</color>
+
+
+    <color name="colorGreyX11">#C3BABA</color>
+    <color name="colorSpanishGrey">#9A8F97</color>
+    <color name="colorPlatinum">#E9E3E6</color>
+    <color name="colorAshGrey">#B2B2B2</color>
+    <color name="colorNickel">#736F72</color>
+    <color name="colorTartOrange">#FB4D3D</color>
+    <color name="colorCaribbeanGreen">#03CEA4</color>
+    <color name="colorCaribbeanGreen2">#02aa88</color>
+
+    <color name="anakiwa">#90D0E7</color>
+    <color name="orangePeel">#FE9C00</color>
+
+</resources>
